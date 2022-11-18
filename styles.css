@@ -4,7 +4,7 @@
 .text {
   color: #707b7f;
 }
-.h1{
+.h1 {
   font-weight: bold;
 }
 .container {
@@ -21,9 +21,9 @@
   font-size: medium;
   color: #6d777b;
 }
-.item1{
-    position: relative;
-    width: 375px;
+.item1 {
+  position: relative;
+  width: 375px;
 }
 .iconcontainer {
   background-color: black;
@@ -53,16 +53,15 @@
   background-color: black;
   color: white;
 }
-.backgroundimge{
-    width: 375px;
-    height: 300px;
-    border-radius: 15px;
-
-} 
-.snackimge{
+.backgroundimge {
+  width: 375px;
+  height: 300px;
+  border-radius: 15px;
+}
+.snackimge {
   position: absolute;
   margin-top: -70px;
 }
-.snack{
-    padding-left: 65px;
+.snack {
+  padding-left: 65px;
 }
