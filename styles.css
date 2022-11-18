@@ -2,7 +2,10 @@
   text-align: center;
 }
 .text {
-  color: gray;
+  color: #707b7f;
+}
+.h1{
+  font-weight: bold;
 }
 .container {
   display: flex;
@@ -11,25 +14,28 @@
   margin-top: 100px;
 }
 .price {
+  font-size: larger;
   font-weight: bold;
 }
 .name {
-  font-size: small;
+  font-size: medium;
+  color: #6d777b;
 }
 .item1{
     position: relative;
+    width: 375px;
 }
 .iconcontainer {
   background-color: black;
-  width: 30px;
+  width: 40px;
   border-radius: 20px;
-  height: 30px;
+  height: 40px;
   justify-content: center;
   align-items: center;
   display: flex;
   position: absolute;
-  left: 170px;
-  top: 185px;
+  left: 290px;
+  top: 282px;
 }
 .icon {
   color: white;
@@ -48,12 +54,15 @@
   color: white;
 }
 .backgroundimge{
-    
+    width: 375px;
+    height: 300px;
+    border-radius: 15px;
+
 } 
 .snackimge{
   position: absolute;
   margin-top: -70px;
 }
 .snack{
-    padding-left: 15px;
+    padding-left: 65px;
 }
