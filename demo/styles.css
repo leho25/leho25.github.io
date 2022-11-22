@@ -13,12 +13,14 @@
   color: #f80404;
   text-align: center;
   margin-top: 76px;
+  font-family: Arial;
 }
 .text-image {
   text-align: center;
   color: #fbfbfb;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: Arial;
 }
 .container2 {
   display: flex;
