@@ -147,6 +147,7 @@ a {
   color: #c69930;
   font-size: 44px;
   font-weight: 600;
+  text-align: center;
 }
 .bg-discount {
   margin-top: 60px;
@@ -270,7 +271,7 @@ a {
   width: 70%;
 
   left: 50%;
-  transform: translateX(25%);
+  transform: translateX(20%);
 }
 #submit {
   left: 50%;
@@ -399,4 +400,17 @@ a {
     right: 25px;
     z-index: 10;
     cursor: pointer
+}
+.boxfooter-bottom{
+  display: flex;
+  justify-content: space-between;
+  background-color: #0d6efd;
+  margin: -6px 0;
+  padding: 0 112px
+}
+.boxfooter-bottom p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #fff;
 }
