@@ -13,6 +13,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <link href="assets/css/styles.css" rel="stylesheet" />
     <script
@@ -22,6 +24,7 @@
       src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0"
       nonce="UOAGBvWk"
     ></script>
+
     <title>Document</title>
   </head>
   <body>
@@ -457,6 +460,11 @@
         </div>
       </div>
     </footer>
+
+    <div class="toTop" data-aos="fade-up" data-aos-duration="2000">
+      <img src="http://goldbeautyhanquoc.com/assets/images/top.png" alt="" />
+    </div>
+
     <script>
       $(".slider").slick({
         slidesToShow: 1,
@@ -465,6 +473,9 @@
         prevArrow: '<button class="slick-prev"> < </button>',
         nextArrow: '<button class="slick-next"> > </button>',
       });
+    </script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
