@@ -342,6 +342,8 @@ ul {
 }
 .col ul .title-p {
   color: #fdde04;
+  font-weight: bold;
+  font-family: Arial;
 }
 .white-text {
   color: white;
@@ -364,6 +366,9 @@ ul {
   background-color: #fff;
   position: absolute;
   bottom: 0;
+}
+.text-hr h1{
+  font-family: Arial;
 }
 .parent {
   position: relative;
