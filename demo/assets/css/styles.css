@@ -33,6 +33,10 @@ body {
   width: auto;
   position: absolute;
 }
+.title:hover {
+  color: blue;
+  background-color: #fff;
+}
 .text-image {
   text-align: center;
   color: #fbfbfb;
@@ -51,8 +55,22 @@ body {
   border-radius: 20px;
   height: 144px;
 }
+.box:hover {
+  box-shadow: 0 0 20px 0;
+  width: 515px;
+  margin-top: 15px;
+  border-radius: 20px;
+  height: 144px;
+}
 .box-v1 {
   box-shadow: 0 0 5px 0;
+  width: 515px;
+  margin-top: 15px;
+  border-radius: 20px;
+  height: 120px;
+}
+.box-v1:hover {
+  box-shadow: 0 0 20px 0;
   width: 515px;
   margin-top: 15px;
   border-radius: 20px;
@@ -84,7 +102,7 @@ body {
   font-weight: bold;
   font-family: Arial;
 }
-.image{
+.image {
   display: flex;
   flex-flow: row wrap;
   margin-left: 91px;
@@ -110,6 +128,67 @@ body {
   color: #6e6d6e;
   border-radius: 5px;
   flex-direction: row;
+  position: relative;
+  z-index: 1;
+}
+.text-button::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.text-button::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.text-button:active {
+  color: #000;
+  border: none;
+}
+.text-button:active::after {
+  background: transparent;
+}
+.text-button:hover::before {
+  opacity: 1;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 .text-khuyenmai {
   color: #ffffff;
@@ -178,12 +257,50 @@ body {
   margin-left: 5px;
   margin-right: 5px;
 }
+.mgr-mgl .hidden:hover {
+  border: 1px solid yellow;
+  border-radius: 5px;
+}
+.mgr-mgl:hover img {
+  opacity: 0.8;
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+.mgr-mgl .hidden {
+  overflow: hidden;
+}
+.overplay {
+  position: absolute;
+  background-color: #0ec17c;
+  bottom: 0%;
+  border-radius: 4px;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: none;
+  box-shadow: 6px -5px 5px 0px #0ec17c;
+}
+.img-t-item:hover .overplay {
+  opacity: 0.5;
+  display: block;
+}
 .title-1::after {
   content: "";
   display: inline-block;
   width: 50%;
   height: 2px;
   background-color: #f80404;
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.title-1:hover:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  background-color: blue;
   position: absolute;
   bottom: -13px;
   left: 50%;
@@ -205,6 +322,9 @@ body {
 .img-t-item {
   position: relative;
   margin: 0 0;
+}
+.img-hv:hover {
+  box-shadow: 0 0 20px 0;
 }
 .wrapper {
   background-color: #f80404;
@@ -342,8 +462,6 @@ ul {
 }
 .col ul .title-p {
   color: #fdde04;
-  font-weight: bold;
-  font-family: Arial;
 }
 .white-text {
   color: white;
@@ -367,13 +485,10 @@ ul {
   position: absolute;
   bottom: 0;
 }
-.text-hr h1{
-  font-family: Arial;
-}
 .parent {
   position: relative;
 }
-.hr-bottom{
+.hr-bottom {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -383,7 +498,7 @@ ul {
   border-width: 1px;
   color: #fff;
 }
-.hr-top{
+.hr-top {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -393,7 +508,7 @@ ul {
   border-width: 1px;
   color: #fff;
 }
-.design{
+.design {
   display: flex;
   justify-content: space-between;
 }
@@ -401,14 +516,11 @@ ul {
   color: white;
   font-size: 14px;
 }
-.toTop{
-     width: 41px;
-    height: 41px;
-    text-align: center;
-    font-weight: bold;
-    color: red;
-    text-decoration: none;
-    position: fixed;
-    right: 15px;
-    bottom: 30px;
+.list-image {
+  overflow: hidden;
+}
+.item-image:hover img {
+  opacity: 0.5;
+  transform: scale(1.1);
+  border-radius: 25px;
 }

@@ -14,7 +14,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <link href="assets/css/styles.css" rel="stylesheet" />
     <script
@@ -24,7 +23,7 @@
       src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0"
       nonce="UOAGBvWk"
     ></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -34,27 +33,39 @@
           <p class="title title-1">DỊCH VỤ CHÚNG TÔI</p>
         </div>
 
-        <div class="f4-container">
+        <div class="f4-container" data-aos="fade-up" data-aos-duration="3000">
           <div class="img-t-item">
-            <img src="assets/images/hinh1.jpg" />
+            <div>
+              <img src="assets/images/hinh1.jpg" />
+            </div>
+            <div class="overplay"></div>
             <div class="wrapper">
               <p class="text-image">NIỀNG RĂNG THẨM MỸ</p>
             </div>
           </div>
           <div class="img-t-item">
-            <img src="assets/images/hinh2.jpg" />
+            <div>
+              <img src="assets/images/hinh2.jpg" />
+            </div>
+            <div class="overplay"></div>
             <div class="wrapper">
               <p class="text-image">RĂNG SỨ THẨM MỸ</p>
             </div>
           </div>
           <div class="img-t-item">
-            <img src="assets/images/hinh3.jpg" />
+            <div>
+              <img src="assets/images/hinh3.jpg" />
+            </div>
+            <div class="overplay"></div>
             <div class="wrapper">
               <p class="text-image">CẤY GHÉP IMPLANT</p>
             </div>
           </div>
           <div class="img-t-item">
-            <img src="assets/images/hinh4.jpg" />
+            <div>
+              <img src="assets/images/hinh4.jpg" />
+            </div>
+            <div class="overplay"></div>
             <div class="wrapper">
               <p class="text-image">TẨY RĂNG THẨM MỸ</p>
             </div>
@@ -63,10 +74,18 @@
       </div>
     </div>
     <div class="container2">
-      <div style="margin-top: 12px">
-        <img src="assets/images/image5.png" />
+      <div
+        style="margin-top: 12px"
+        data-aos="zoom-out-right"
+        data-aos-duration="3000"
+      >
+        <img class="img-hv" src="assets/images/image5.png" />
       </div>
-      <div style="margin-top: 31px; margin-left: 35px">
+      <div
+        style="margin-top: 31px; margin-left: 35px"
+        data-aos="zoom-out-left"
+        data-aos-duration="3000"
+      >
         <div class="box">
           <img src="assets/images/image6.png" class="doctor-img" />
           <div style="margin-top: 15px">
@@ -136,18 +155,48 @@
       <p class="text-videos">VIDEOS ĐÁNH GIÁ TỪ KHÁCH HÀNG</p>
     </div>
     <div class="image">
-      <div class="col" style="flex-grow: 2">
-        <img src="assets/images/hinh9.jpg" alt="" width="100%" />
-        <img src="assets/images/hinh10.jpg" alt="" width="100%" />
-        <img src="assets/images/hinh11.jpg" alt="" width="100%" />
+      <div
+        class="col list-image"
+        style="flex-grow: 2"
+        data-aos="zoom-in-left"
+        data-aos-duration="3000"
+      >
+        <div class="item-image">
+          <img src="assets/images/hinh9.jpg" alt="" width="100%" />
+        </div>
+        <div class="item-image">
+          <img src="assets/images/hinh10.jpg" alt="" width="100%" />
+        </div>
+        <div class="item-image">
+          <img src="assets/images/hinh11.jpg" alt="" width="100%" />
+        </div>
       </div>
-      <div class="col" style="flex-grow: 6">
-        <img src="assets/images/hinh8.jpg" alt="" width="100%" />
+      <div
+        class="col list-image"
+        style="flex-grow: 6"
+        data-aos="fade-down"
+        data-aos-duration="3000"
+      >
+        <div class="item-image">
+          <img src="assets/images/hinh8.jpg" alt="" width="100%" />
+        </div>
       </div>
-      <div class="col" style="flex-grow: 2">
-        <img src="assets/images/hinh9.jpg" alt="" width="100%" />
-        <img src="assets/images/hinh10.jpg" alt="" width="100%" />
-        <img src="assets/images/hinh11.jpg" alt="" width="100%" />
+      <div
+        class="col list-image"
+        style="flex-grow: 2"
+        data-aos="zoom-in-right"
+        data-aos-duration="3000"
+      >
+        <div class="item-image">
+          <img src="assets/images/hinh9.jpg" alt="" width="100%" />
+        </div>
+
+        <div class="item-image">
+          <img src="assets/images/hinh10.jpg" alt="" width="100%" />
+        </div>
+        <div class="item-image">
+          <img src="assets/images/hinh11.jpg" alt="" width="100%" />
+        </div>
       </div>
     </div>
     <div class="button">
@@ -286,6 +335,7 @@
         />
         <p class="text-khuyenmai">HÌNH ẢNH CHUỖI HỆ THỐNG NHA KHOA</p>
       </div>
+      <!-- Hinh ảnh chuỗi hệ thống nha khoa -->
       <div
         style="
           display: flex;
@@ -296,19 +346,33 @@
         "
       >
         <div class="mgr-mgl">
-          <img src="assets/images/hinh16.jpg" alt="" width="100%" />
-          <p class="text-item-child">NHA KHOA ĐĂNG KHOA 2</p>
+          <div class="hidden">
+            <img src="assets/images/hinh16.jpg" alt="" width="100%" />
+          </div>
+
+          <div>
+            <p class="text-item-child">NHA KHOA ĐĂNG KHOA 2</p>
+          </div>
         </div>
         <div class="mgr-mgl">
-          <img src="assets/images/hinh17.jpg" alt="" width="100%" />
+          <div class="hidden">
+            <img src="assets/images/hinh17.jpg" alt="" width="100%" />
+          </div>
+
           <p class="text-item-child">NHA KHOA ĐĂNG KHOA 6</p>
         </div>
         <div class="mgr-mgl">
-          <img src="assets/images/hinh18.jpg" alt="" width="100%" />
+          <div class="hidden">
+            <img src="assets/images/hinh18.jpg" alt="" width="100%" />
+          </div>
+
           <p class="text-item-child">NHA KHOA ĐĂNG KHOA 8</p>
         </div>
         <div class="mgr-mgl">
-          <img src="assets/images/hinh19.jpg" alt="" width="100%" />
+          <div class="hidden">
+            <img src="assets/images/hinh19.jpg" alt="" width="100%" />
+          </div>
+
           <p class="text-item-child">NHA KHOA ĐĂNG KHOA 4</p>
         </div>
       </div>
@@ -460,11 +524,6 @@
         </div>
       </div>
     </footer>
-
-    <div class="toTop" data-aos="fade-up" data-aos-duration="2000">
-      <img src="http://goldbeautyhanquoc.com/assets/images/top.png" alt="" />
-    </div>
-
     <script>
       $(".slider").slick({
         slidesToShow: 1,
