@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img
+                src="http://www.gasthanhtai.com/extension/webbase/design/ezflow/images/logo.png"
+                alt=""
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+              <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-sharp fa-solid fa-house"></i
+                  ></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    VỀ CHÚNG TÔI
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Giới thiệu</a></li>
+                    <li><a class="dropdown-item" href="#">Vị trí địa lý</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Nguồn lực khai thác</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Cơ cấu tổ chức</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kế hoạch đầu tư phát triển</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">Thành tựu</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    DỊCH VỤ CẢNG
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Giới thiệu</a></li>
+                    <li><a class="dropdown-item" href="#">Vị trí địa lý</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Nguồn lực khai thác</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Cơ cấu tổ chức</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kế hoạch đầu tư phát triển</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">Thành tựu</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    DÀNH CHO NHÂN VIÊN
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Giới thiệu</a></li>
+                    <li><a class="dropdown-item" href="#">Vị trí địa lý</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Nguồn lực khai thác</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Cơ cấu tổ chức</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kế hoạch đầu tư phát triển</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">Thành tựu</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">TIN TỨC</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">LIÊN HỆ </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    VN
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img
+                src="http://www.gasthanhtai.com/extension/webbase/design/ezflow/images/logo.png"
+                alt=""
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-around"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-sharp fa-solid fa-house"></i
+                  ></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    VỀ CHÚNG TÔI
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Giới thiệu</a></li>
+                    <li><a class="dropdown-item" href="#">Vị trí địa lý</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Nguồn lực khai thác</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Cơ cấu tổ chức</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kế hoạch đầu tư phát triển</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">Thành tựu</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    DỊCH VỤ CẢNG
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Giới thiệu</a></li>
+                    <li><a class="dropdown-item" href="#">Vị trí địa lý</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Nguồn lực khai thác</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Cơ cấu tổ chức</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kế hoạch đầu tư phát triển</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">Thành tựu</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    DÀNH CHO NHÂN VIÊN
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Giới thiệu</a></li>
+                    <li><a class="dropdown-item" href="#">Vị trí địa lý</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Nguồn lực khai thác</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Cơ cấu tổ chức</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Kế hoạch đầu tư phát triển</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">Thành tựu</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">TIN TỨC</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">LIÊN HỆ </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    VN
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav> -->
+        <div class="banner-home">
+          <div class="img-cover">
+            <img
+              src="https://danangport.com/wp-content/uploads/2022/07/Cang-DN_1365x768.png"
+              alt=""
+            />
+          </div>
+          <div class="img-cover">
+            <img
+              src="https://danangport.com/wp-content/uploads/2020/07/TOAN-CANH-DEM-TIEN-SA-2-Medium.jpg"
+              alt=""
+            />
+          </div>
+          <div class="img-cover">
+            <img
+              src="https://danangport.com/wp-content/uploads/2020/07/DJI_0412-Medium.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="box-search-banner">
+          <div class="container">
+            <div class="search-banner">
+              <h3>Chúng tôi có thể giúp gì cho bạn?</h3>
+              <div class="form-search-banner">
+                <form action="" method="get">
+                  <input
+                    type="text"
+                    placeholder="Nhập nội dung bạn muốn tìm kiếm…"
+                  />
+                  <button>
+                    <p>Tìm Kiếm</p>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom">
+        <div class="container">
+          <h2 class="title-custom">Dành cho khách hàng</h2>
+          <div class="row list-item-custom">
+            <div class="col col-lg-3 col-md-6 col-sm-6 col-12 item-custom">
+              <div class="box-content-custom">
+                <div class="box-img-custom">
+                  <a href=""
+                    ><img
+                      src="https://danangport.com/wp-content/uploads/2018/08/search-container.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <h3 class="title-service-custom"><a href="">Kho Xưởng</a></h3>
+                <p class="des-service-custom">
+                  Bắt đầu từ 28/06/2016 Qúy khách hàng có thể tra cứu container
+                  bằng 2 cách: Cách 1:...
+                </p>
+              </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-6 col-12 item-custom">
+              <div class="box-content-custom">
+                <div class="box-img-custom">
+                  <a href=""
+                    ><img
+                      src="https://danangport.com/wp-content/uploads/2018/08/productivity.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <h3 class="title-service-custom"><a href="">Kho Xưởng</a></h3>
+                <p class="des-service-custom">
+                  Bắt đầu từ 28/06/2016 Qúy khách hàng có thể tra cứu container
+                  bằng 2 cách: Cách 1:...
+                </p>
+              </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-6 col-12 item-custom">
+              <div class="box-content-custom">
+                <div class="box-img-custom">
+                  <a href=""
+                    ><img
+                      src="https://danangport.com/wp-content/uploads/2018/08/customer.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <h3 class="title-service-custom"><a href="">Kho Xưởng</a></h3>
+                <p class="des-service-custom">
+                  Bắt đầu từ 28/06/2016 Qúy khách hàng có thể tra cứu container
+                  bằng 2 cách: Cách 1:...
+                </p>
+              </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-6 col-12 item-custom">
+              <div class="box-content-custom">
+                <div class="box-img-custom">
+                  <a href=""
+                    ><img
+                      src="https://danangport.com/wp-content/uploads/2018/08/tariffs.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <h3 class="title-service-custom"><a href="">Kho Xưởng</a></h3>
+                <p class="des-service-custom">
+                  Bắt đầu từ 28/06/2016 Qúy khách hàng có thể tra cứu container
+                  bằng 2 cách: Cách 1:...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row list-item-custom">
+            <div class="col col-lg-3 col-md-6 col-sm-6 col-12 item-custom">
+              <div class="box-content-custom">
+                <div class="box-img-custom">
+                  <a href=""
+                    ><img
+                      src="https://danangport.com/wp-content/uploads/2018/08/train-schedule.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <h3 class="title-service-custom"><a href="">Kho Xưởng</a></h3>
+                <p class="des-service-custom">
+                  Bắt đầu từ 28/06/2016 Qúy khách hàng có thể tra cứu container
+                  bằng 2 cách: Cách 1:...
+                </p>
+              </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-6 col-12 item-custom">
+              <div class="box-content-custom">
+                <div class="box-img-custom">
+                  <a href=""
+                    ><img
+                      src="https://danangport.com/wp-content/uploads/2018/09/icon4-1.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <h3 class="title-service-custom"><a href="">Kho Xưởng</a></h3>
+                <p class="des-service-custom">
+                  Bắt đầu từ 28/06/2016 Qúy khách hàng có thể tra cứu container
+                  bằng 2 cách: Cách 1:...
+                </p>
+              </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-6 col-12 item-custom">
+              <div class="box-content-custom">
+                <div class="box-img-custom">
+                  <a href=""
+                    ><img
+                      src="https://danangport.com/wp-content/uploads/2018/09/icon1-1.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <h3 class="title-service-custom"><a href="">Kho Xưởng</a></h3>
+                <p class="des-service-custom">
+                  Bắt đầu từ 28/06/2016 Qúy khách hàng có thể tra cứu container
+                  bằng 2 cách: Cách 1:...
+                </p>
+              </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-6 col-12 item-custom">
+              <div class="box-content-custom">
+                <div class="box-img-custom">
+                  <a href=""
+                    ><img
+                      src="https://danangport.com/wp-content/uploads/2019/04/thongbao.png"
+                      alt=""
+                  /></a>
+                </div>
+                <h3 class="title-service-custom"><a href="">Kho Xưởng</a></h3>
+                <p class="des-service-custom">
+                  Bắt đầu từ 28/06/2016 Qúy khách hàng có thể tra cứu container
+                  bằng 2 cách: Cách 1:...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title-warehouse-center">
+        <div class="container">
+          <h2 class="title-warehouse">Kho xưởng THÀNH TÀI</h2>
+        </div>
+      </div>
+      <div class="slider-warehouse">
+        <div class="warehouse-img">
+          <img
+            src="https://danangport.com/wp-content/uploads/2022/07/Cang-DN_1365x768.png"
+            alt=""
+          />
+          <div class="name-slider">
+            <p class="name-slider-img">Long An</p>
+          </div>
+        </div>
+
+        <div class="warehouse-img">
+          <img
+            src="https://danangport.com/wp-content/uploads/2020/07/TOAN-CANH-DEM-TIEN-SA-2-Medium.jpg"
+            alt=""
+          />
+          <div class="name-slider">
+            <p class="name-slider-img">Sài Gòn</p>
+          </div>
+        </div>
+        <div class="warehouse-img">
+          <img
+            src="https://danangport.com/wp-content/uploads/2020/07/DJI_0412-Medium.jpg"
+            alt=""
+          />
+          <div class="name-slider">
+            <p class="name-slider-img">Cần Thơ</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-square">
+        <div class="container">
+          <ul>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+          </ul>
+        </div>
+      </div>
+      <div class="info-warehouse">
+        <div class="container">
+          <h2 class="title-info-warehouse">Thông tin kho xưởng</h2>
+          <div class="address-info-warehouse">
+            <p>
+              Địa chỉ: 192 Nguyễn Văn Tuôi, Kp 6, Thị trấn Bến Lức, Huyện Bến
+              Lức, Tỉnh Long An
+            </p>
+          </div>
+          <div class="row">
+            <div class="col col-lg-4 col-md-12 col-sm-12 col-12 text-line">
+              <p>Tổng diện tích đất: 18 ha</p>
+              <p>Tổng diện tích kho xưởng 100.000m2</p>
+              <p>Diện tích tối thiếu: 500m2/kho</p>
+              <p>Trọng tải sàn: 2.5 – 3 tấn/m2</p>
+              <p>Nguồn điện: 3 pha EVN</p>
+              <p>Cấp nước: Nhà máy nước Bến Lức, Long An</p>
+            </div>
+            <div class="col col-lg-4 col-md-12 col-sm-12 col-12 text-line">
+              <p>
+                Hệ thống PCCC: trang bị trong khuôn viên và vách tường kho xưởng
+              </p>
+              <p>Bảo vệ khuôn viên 24/7</p>
+              <p>Đường nội bộ: rộng 12m, thuận tiện vận chuyển container</p>
+              <p>Cầu cân: 80 tấn & 100 tấn</p>
+              <p>Bãi chứa container: 4 bãi (tổng 5000m2)</p>
+              <p>Không tính thêm phí quản lý, phí bảo trì</p>
+            </div>
+            <div class="col col-lg-4 col-md-12 col-sm-12 col-12 text-line">
+              <p>Cho thuê các sản phẩm:</p>
+              <p>Kho chứa hàng hóa, từ 500m2 đến 20.000m2</p>
+              <p>Nhà xưởng sản xuất, từ 500m2 đến 20.000m2</p>
+              <p>Silo chứa nông sản: 3 silo 3000 tấn</p>
+              <p>Cho thuê văn phòng, diện tích cho thuê lên đến 2000 m2</p>
+              <p>Ký túc xá cho công nhân viên lưu trú</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="diagram-warehouse">
+        <div class="container">
+          <h2 class="title-diagram-warehouse">Sơ Đồ Kho Xưởng</h2>
+          <div class="img-diagram-warehouse">
+            <img
+              src="http://camgroup.vn/upload/images/SO%20DO%20LONG%20AN%20-%20English-01(1).png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="title-warehouse-center">
+        <div class="container">
+          <h2 class="title-warehouse">Tàu cảng thành tài</h2>
+        </div>
+      </div>
+      <div class="slider-warehouse">
+        <div class="warehouse-img">
+          <img
+            src="https://danangport.com/wp-content/uploads/2022/07/Cang-DN_1365x768.png"
+            alt=""
+          />
+          <div class="name-slider">
+            <p class="name-slider-img">Long An</p>
+          </div>
+        </div>
+
+        <div class="warehouse-img">
+          <img
+            src="https://danangport.com/wp-content/uploads/2020/07/TOAN-CANH-DEM-TIEN-SA-2-Medium.jpg"
+            alt=""
+          />
+          <div class="name-slider">
+            <p class="name-slider-img">Sài Gòn</p>
+          </div>
+        </div>
+        <div class="warehouse-img">
+          <img
+            src="https://danangport.com/wp-content/uploads/2020/07/DJI_0412-Medium.jpg"
+            alt=""
+          />
+          <div class="name-slider">
+            <p class="name-slider-img">Cần Thơ</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-square">
+        <div class="container">
+          <ul>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+          </ul>
+        </div>
+      </div>
+      <div class="info-warehouse">
+        <div class="container">
+          <h2 class="title-info-warehouse">Thông tin kho xưởng</h2>
+          <div class="address-info-warehouse">
+            <p>
+              Địa chỉ: 192 Nguyễn Văn Tuôi, Kp 6, Thị trấn Bến Lức, Huyện Bến
+              Lức, Tỉnh Long An
+            </p>
+          </div>
+          <div class="row">
+            <div class="col col-lg-4 col-md-12 col-sm-12 col-12 text-line">
+              <p>Tổng diện tích đất: 18 ha</p>
+              <p>Tổng diện tích kho xưởng 100.000m2</p>
+              <p>Diện tích tối thiếu: 500m2/kho</p>
+              <p>Trọng tải sàn: 2.5 – 3 tấn/m2</p>
+              <p>Nguồn điện: 3 pha EVN</p>
+              <p>Cấp nước: Nhà máy nước Bến Lức, Long An</p>
+            </div>
+            <div class="col col-lg-4 col-md-12 col-sm-12 col-12 text-line">
+              <p>
+                Hệ thống PCCC: trang bị trong khuôn viên và vách tường kho xưởng
+              </p>
+              <p>Bảo vệ khuôn viên 24/7</p>
+              <p>Đường nội bộ: rộng 12m, thuận tiện vận chuyển container</p>
+              <p>Cầu cân: 80 tấn & 100 tấn</p>
+              <p>Bãi chứa container: 4 bãi (tổng 5000m2)</p>
+              <p>Không tính thêm phí quản lý, phí bảo trì</p>
+            </div>
+            <div class="col col-lg-4 col-md-12 col-sm-12 col-12 text-line">
+              <p>Cho thuê các sản phẩm:</p>
+              <p>Kho chứa hàng hóa, từ 500m2 đến 20.000m2</p>
+              <p>Nhà xưởng sản xuất, từ 500m2 đến 20.000m2</p>
+              <p>Silo chứa nông sản: 3 silo 3000 tấn</p>
+              <p>Cho thuê văn phòng, diện tích cho thuê lên đến 2000 m2</p>
+              <p>Ký túc xá cho công nhân viên lưu trú</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="diagram-warehouse">
+        <div class="container">
+          <h2 class="title-diagram-warehouse">Sơ Đồ Kho Xưởng</h2>
+          <div class="img-diagram-warehouse">
+            <img
+              src="http://camgroup.vn/upload/images/SO%20DO%20LONG%20AN%20-%20English-01(1).png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="exploit">
+        <div class="container">
+          <div class="wrap-title-exploit">
+            <h2 class="title-exploit">Nguồn lực khai thác</h2>
+          </div>
+          <div class="slider-exploit">
+            <div class="item-post-exp">
+              <div class="box-img-exp">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2020/08/Hinh-hang-roi.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="box-info-exp">
+                <h3 class="title-pos-exp"><a href="">Nhân Sự</a></h3>
+                <p>
+                  A. Hệ thống phần mềm 1. Phần mềm quản lý khai thác Container
+                  CATOS (Computer Automatic Terminal Operation System) 2.
+                  Phần...
+                </p>
+                <div class="size-detail">
+                  <a href=""
+                    >XEM CHI TIẾT
+                    <i class="fa-sharp fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="item-post-exp">
+              <div class="box-img-exp">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2018/09/nhansu.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="box-info-exp">
+                <h3 class="title-pos-exp"><a href="">Nhân Sự</a></h3>
+                <p>
+                  A. Hệ thống phần mềm 1. Phần mềm quản lý khai thác Container
+                  CATOS (Computer Automatic Terminal Operation System) 2.
+                  Phần...
+                </p>
+                <div class="size-detail">
+                  <a href=""
+                    >XEM CHI TIẾT
+                    <i class="fa-sharp fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="item-post-exp">
+              <div class="box-img-exp">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2018/09/banner-cocautochuc.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="box-info-exp">
+                <h3 class="title-pos-exp"><a href="">Nhân Sự</a></h3>
+                <p>
+                  A. Hệ thống phần mềm 1. Phần mềm quản lý khai thác Container
+                  CATOS (Computer Automatic Terminal Operation System) 2.
+                  Phần...
+                </p>
+                <div class="size-detail">
+                  <a href=""
+                    >XEM CHI TIẾT
+                    <i class="fa-sharp fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="item-post-exp">
+              <div class="box-img-exp">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2018/12/cntt.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="box-info-exp">
+                <h3 class="title-pos-exp"><a href="">Nhân Sự</a></h3>
+                <p>
+                  A. Hệ thống phần mềm 1. Phần mềm quản lý khai thác Container
+                  CATOS (Computer Automatic Terminal Operation System) 2.
+                  Phần...
+                </p>
+                <div class="size-detail">
+                  <a href=""
+                    >XEM CHI TIẾT
+                    <i class="fa-sharp fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="item-post-exp">
+              <div class="box-img-exp">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2018/09/banner-cauben.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="box-info-exp">
+                <h3 class="title-pos-exp"><a href="">Nhân Sự</a></h3>
+                <p>
+                  A. Hệ thống phần mềm 1. Phần mềm quản lý khai thác Container
+                  CATOS (Computer Automatic Terminal Operation System) 2.
+                  Phần...
+                </p>
+                <div class="size-detail">
+                  <a href=""
+                    >XEM CHI TIẾT
+                    <i class="fa-sharp fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="container">
+          <div class="box-contact">
+            <h1 class="title-contact">Liên hệ vùng - CẢNG THÀNH TÀI LONG AN</h1>
+            <a href="">
+              <img
+                src="https://camgroup.vn/cangcamnguyen/upload/hinhanh/lien-he-vungtrang-chu-6349_1200x590.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hotnews">
+        <div class="container">
+          <div class="wrap-title-hotnews">
+            <h2 class="title-hotnews">Tin nổi bật</h2>
+          </div>
+          <div class="slider-exploit">
+            <div class="item-post-hn">
+              <div class="box-img-hn box-img-square">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2022/12/image003-5739.png"
+                    alt=""
+                  />
+                </a>
+                <p class="date-time">
+                  <span class="date">06-12</span>
+                  <span class="year">2022</span>
+                </p>
+              </div>
+              <div class="box-info-hn">
+                <h3 class="title-pos-hn">
+                  <a href=""
+                    >MoMo gửi tặng combo 6 thẻ quà trị giá 210.000 đồng
+                    cho...</a
+                  >
+                </h3>
+                <p>
+                  Chào mừng Bạn mới, từ ngày 01/11 đến 31/12/2022, MoMo gửi tặng
+                  combo 6 thẻ quà 210.000 đ...
+                </p>
+                <div class="news">
+                  <a href=""><i class="fa-solid fa-newspaper"></i>Tin tức </a>
+                </div>
+              </div>
+            </div>
+            <div class="item-post-hn">
+              <div class="box-img-hn box-img-square">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2022/11/1200x630.jpg"
+                    alt=""
+                  />
+                </a>
+                <p class="date-time">
+                  <span class="date">06-12</span>
+                  <span class="year">2022</span>
+                </p>
+              </div>
+              <div class="box-info-hn">
+                <h3 class="title-pos-hn">
+                  <a href=""
+                    >MoMo gửi tặng combo 6 thẻ quà trị giá 210.000 đồng
+                    cho...</a
+                  >
+                </h3>
+                <p>
+                  Chào mừng Bạn mới, từ ngày 01/11 đến 31/12/2022, MoMo gửi tặng
+                  combo 6 thẻ quà 210.000 đ...
+                </p>
+                <div class="news">
+                  <a href=""><i class="fa-solid fa-newspaper"></i>Tin tức </a>
+                </div>
+              </div>
+            </div>
+            <div class="item-post-hn">
+              <div class="box-img-hn box-img-square">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2022/12/ADT_9345-scaled.jpg"
+                    alt=""
+                  />
+                </a>
+                <p class="date-time">
+                  <span class="date">06-12</span>
+                  <span class="year">2022</span>
+                </p>
+              </div>
+              <div class="box-info-hn">
+                <h3 class="title-pos-hn">
+                  <a href=""
+                    >MoMo gửi tặng combo 6 thẻ quà trị giá 210.000 đồng
+                    cho...</a
+                  >
+                </h3>
+                <p>
+                  Chào mừng Bạn mới, từ ngày 01/11 đến 31/12/2022, MoMo gửi tặng
+                  combo 6 thẻ quà 210.000 đ...
+                </p>
+                <div class="news">
+                  <a href=""><i class="fa-solid fa-newspaper"></i>Tin tức </a>
+                </div>
+              </div>
+            </div>
+            <div class="item-post-hn">
+              <div class="box-img-hn box-img-square">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2022/12/cang-bien-2111.jpg"
+                    alt=""
+                  />
+                </a>
+                <p class="date-time">
+                  <span class="date">06-12</span>
+                  <span class="year">2022</span>
+                </p>
+              </div>
+              <div class="box-info-hn">
+                <h3 class="title-pos-hn">
+                  <a href=""
+                    >MoMo gửi tặng combo 6 thẻ quà trị giá 210.000 đồng
+                    cho...</a
+                  >
+                </h3>
+                <p>
+                  Chào mừng Bạn mới, từ ngày 01/11 đến 31/12/2022, MoMo gửi tặng
+                  combo 6 thẻ quà 210.000 đ...
+                </p>
+                <div class="news">
+                  <a href=""><i class="fa-solid fa-newspaper"></i>Tin tức </a>
+                </div>
+              </div>
+            </div>
+            <div class="item-post-hn">
+              <div class="box-img-hn box-img-square">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2022/11/logichain-2022-cau-noi-vung-chac-giua-doanh-nghiep-logistics-va-nguon-nhan-luc-tre-viet-nam_2.jpg"
+                    alt=""
+                  />
+                </a>
+                <p class="date-time">
+                  <span class="date">06-12</span>
+                  <span class="year">2022</span>
+                </p>
+              </div>
+              <div class="box-info-hn">
+                <h3 class="title-pos-hn"><a href="">Nhân Sự</a></h3>
+                <p>
+                  A. Hệ thống phần mềm 1. Phần mềm quản lý khai thác Container
+                  CATOS (Computer Automatic Terminal Operation System) 2.
+                  Phần...
+                </p>
+                <div class="news">
+                  <a href=""><i class="fa-solid fa-newspaper"></i>Tin tức </a>
+                </div>
+              </div>
+            </div>
+            <div class="item-post-hn">
+              <div class="box-img-hn box-img-square">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2022/11/a8.png"
+                    alt=""
+                  />
+                </a>
+                <p class="date-time">
+                  <span class="date">06-12</span>
+                  <span class="year">2022</span>
+                </p>
+              </div>
+              <div class="box-info-hn">
+                <h3 class="title-pos-hn">
+                  <a href=""
+                    >MoMo gửi tặng combo 6 thẻ quà trị giá 210.000 đồng
+                    cho...</a
+                  >
+                </h3>
+                <p>
+                  Chào mừng Bạn mới, từ ngày 01/11 đến 31/12/2022, MoMo gửi tặng
+                  combo 6 thẻ quà 210.000 đ...
+                </p>
+                <div class="news">
+                  <a href=""><i class="fa-solid fa-newspaper"></i>Tin tức </a>
+                </div>
+              </div>
+            </div>
+            <div class="item-post-hn">
+              <div class="box-img-hn box-img-square">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2022/11/dsc_7174jpg.jpg"
+                    alt=""
+                  />
+                </a>
+                <p class="date-time">
+                  <span class="date">06-12</span>
+                  <span class="year">2022</span>
+                </p>
+              </div>
+              <div class="box-info-hn">
+                <h3 class="title-pos-hn">
+                  <a href=""
+                    >MoMo gửi tặng combo 6 thẻ quà trị giá 210.000 đồng
+                    cho...</a
+                  >
+                </h3>
+                <p>
+                  Chào mừng Bạn mới, từ ngày 01/11 đến 31/12/2022, MoMo gửi tặng
+                  combo 6 thẻ quà 210.000 đ...
+                </p>
+                <div class="news">
+                  <a href=""><i class="fa-solid fa-newspaper"></i>Tin tức </a>
+                </div>
+              </div>
+            </div>
+            <div class="item-post-hn">
+              <div class="box-img-hn box-img-square">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2022/11/quy-trinh-su-dung-Momo.png"
+                    alt=""
+                  />
+                </a>
+                <p class="date-time">
+                  <span class="date">06-12</span>
+                  <span class="year">2022</span>
+                </p>
+              </div>
+              <div class="box-info-hn">
+                <h3 class="title-pos-hn">
+                  <a href=""
+                    >MoMo gửi tặng combo 6 thẻ quà trị giá 210.000 đồng
+                    cho...</a
+                  >
+                </h3>
+                <p>
+                  Chào mừng Bạn mới, từ ngày 01/11 đến 31/12/2022, MoMo gửi tặng
+                  combo 6 thẻ quà 210.000 đ...
+                </p>
+                <div class="news">
+                  <a href=""><i class="fa-solid fa-newspaper"></i>Tin tức </a>
+                </div>
+              </div>
+            </div>
+            <div class="item-post-hn">
+              <div class="box-img-hn box-img-square">
+                <a href="">
+                  <img
+                    src="https://danangport.com/wp-content/uploads/2022/11/Dien-Dan-2.png"
+                    alt=""
+                  />
+                </a>
+                <p class="date-time">
+                  <span class="date">06-12</span>
+                  <span class="year">2022</span>
+                </p>
+              </div>
+              <div class="box-info-hn">
+                <h3 class="title-pos-hn">
+                  <a href=""
+                    >MoMo gửi tặng combo 6 thẻ quà trị giá 210.000 đồng
+                    cho...</a
+                  >
+                </h3>
+                <p>
+                  Chào mừng Bạn mới, từ ngày 01/11 đến 31/12/2022, MoMo gửi tặng
+                  combo 6 thẻ quà 210.000 đ...
+                </p>
+                <div class="news">
+                  <a href=""><i class="fa-solid fa-newspaper"></i>Tin tức </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="container">
+          <div class="testimonial-inner">
+            <div class="wrap-title-testimonial">
+              <h2 class="title-testimonial">KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI</h2>
+            </div>
+
+            <div class="row row-testimonial">
+              <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="testimonial2">
+                  <div class="pic">
+                    <img
+                      src="https://cokhingochan.vn/upload/news/ed48fe6a1166d7388e77-1929.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="description">
+                    Cửa sắt chất lượng, giá hợp lý, thi công nhanh
+                  </p>
+                  <h3 class="name">Anh Dũng</h3>
+                  <small class="address">- Sài gòn</small>
+                </div>
+              </div>
+              <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="testimonial2">
+                  <div class="pic">
+                    <img
+                      src="https://cokhingochan.vn/upload/news/z38134851959284b1524643621095b395de2f43f739658-2239.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="description">
+                    Hoàn thành tốt, đúng tiến trình tôi rất hài lòng cách làm
+                    việc ở bên Cơ Khí Ngọc Hân
+                  </p>
+                  <h3 class="name">ANH ĐẠT</h3>
+                  <small class="address">- Long An</small>
+                </div>
+              </div>
+              <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="testimonial2">
+                  <div class="pic">
+                    <img
+                      src="https://cokhingochan.vn/upload/news/z3856099227865b9c924640377f9f2022d8d39b2e5b886-9176.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="description">Sản phẩm tuyệt vời. Đúng tiến độ</p>
+                  <h3 class="name">A HIỀN</h3>
+                  <small class="address">- Gò Vấp</small>
+                </div>
+              </div>
+              <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="testimonial2">
+                  <div class="pic">
+                    <img
+                      src="https://cokhingochan.vn/upload/news/duc-6193.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="description">
+                    Thời gian hoàn thiện nhanh, dịch vụ tốt, các em thợ khi thi
+                    công rất vui vẻ. Có tinh thần trách nhiệm với công ty. Nhưng
+                    hiện tại em rất hài lòng.
+                  </p>
+                  <h3 class="name">ANH ĐỨC</h3>
+                  <small class="address">- Củ Chi </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box-logo-footer">
+                <a href="">
+                  <img
+                    src="http://www.gasthanhtai.com/extension/webbase/design/ezflow/images/logo.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="box-info-footer">
+                <div class="box-list-phone">
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i>26 Bạch Đằng - Hải
+                    Châu - Đà Nẵng
+                  </p>
+                </div>
+                <div class="box-list-phone">
+                  <i class="fa-solid fa-phone"></i>
+                  <div class="list-phone">
+                    <div>
+                      <p class="local-phone">Phòng kinh doanh:</p>
+                      <a href=""> 02363. 822163</a>
+                    </div>
+                    <div>
+                      <p class="local-phone">Phòng khai thác:</p>
+                      <a href=""> 02363. 823173</a>
+                    </div>
+                    <div>
+                      <p class="local-phone">Phòng hành chính:</p>
+                      <a href=""> 02363. 822513</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-end-row">
+                  <div class="box-list-phone">
+                    <i class="fa-solid fa-print"></i
+                    ><a href="">02363. 822565</a>
+                  </div>
+                  <div class="box-list-phone">
+                    <i class="fa-solid fa-envelope"></i
+                    ><a href="">cangdn@danangport.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-footer">
+                <div class="row">
+                  <div class="col col-md-4">
+                    <h3>VỀ CHÚNG TÔI</h3>
+                    <ul>
+                      <li><a href="">Cảng Đà Nẵng</a></li>
+                      <li><a href="">Kế hoạch phát triển</a></li>
+                      <li><a href="">Cơ cấu tổ chức</a></li>
+                      <li><a href="">Thành tựu</a></li>
+                    </ul>
+                  </div>
+                  <div class="col col-md-4">
+                    <h3>NGUỒN LỰC KHAI THÁC</h3>
+                    <ul>
+                      <li><a href="">Cầu bến</a></li>
+                      <li><a href="">Kho bãi</a></li>
+                      <li><a href="">Phương tiện thiết bị</a></li>
+                      <li><a href="">Công nghệ thông tin</a></li>
+                      <li><a href="">An ninh cảng</a></li>
+                    </ul>
+                  </div>
+                  <div class="col col-md-4">
+                    <h3>DỊCH VỤ</h3>
+                    <ul>
+                      <li><a href="">Tra cứu container</a></li>
+                      <li><a href="">Biểu cước</a></li>
+                      <li><a href="">Cho thuê văn phòng</a></li>
+                      <li><a href="">Quảng cáo tại Tiên Sa</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-bottom-footer">
+          <div class="container">
+            <div class="row bottom-footer">
+              <div class="col col-lg-6 col-md-12 col-sm-12 col-12 order">
+                <p>Copyright © 2018 Danang Port. All rights reserved.</p>
+                <p>Design by: <a href="">Sotagroup.vn</a></p>
+              </div>
+              <div
+                class="col col-lg-6 col-md-12 col-sm-12 col-12 box-social-footer"
+              >
+                <p>Kết nối với chúng tôi</p>
+                <ul>
+                  <li>
+                    <a href="">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(".banner-home").slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: false,
+        nextArrow: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        fade: true,
+        fadeSpeed: 1000,
+      });
+      $(".slider-warehouse").slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: false,
+        nextArrow: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+      });
+      $(".slider-exploit").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow:
+          '<button class="slick-prev"> <i class="fa-sharp fa-solid fa-arrow-left-long"> </button>',
+        nextArrow:
+          '<button class="slick-next"> <i class="fa-sharp fa-solid fa-arrow-right-long"> </button>',
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 575,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+      $(document).ready(function () {
+        $(window).scroll(function (event) {
+          var pos_body = $("html,body").scrollTop();
+          // console.log(pos_body);
+          if (pos_body > 20) {
+            $(".navbar").addClass("fixed-menu");
+          } else {
+            $(".navbar").removeClass("fixed-menu");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
