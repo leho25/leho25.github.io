@@ -6,12 +6,12 @@
 .nav-item a:hover {
   color: #f3b13f;
 }
-.navbar-collapse{
+.navbar-collapse {
   justify-content: space-around;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .dropdown-item {
   padding: 10px;
@@ -203,11 +203,11 @@
 }
 .box-info-exp .size-detail:hover a {
   color: #f3b13f;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .box-info-exp .size-detail:hover {
   border: 1px solid #f3b13f;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .box-info-exp .title-pos-exp a {
   font-size: 18px;
@@ -240,10 +240,10 @@
   outline: none;
 }
 .fa-arrow-right-long:hover {
-  color: #fff;
+  color: #1cac27ad;
 }
 .fa-arrow-left-long:hover {
-  color: #fff;
+  color: #1cac27ad;
 }
 .slick-prev {
   right: 84px;
@@ -259,14 +259,15 @@
   text-align: center;
 }
 .box-contact .title-contact {
-  margin: 50px 0;
+  /* margin: 50px 0;
   color: green;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bold; */
 }
 .box-contact img {
   width: 100%;
   object-fit: cover;
+  margin-top: 150px;
 }
 /* .news {
 } */
@@ -329,7 +330,7 @@
 }
 .box-info-hn .news:hover a {
   color: #f3b13f;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .box-info-hn .title-pos-hn a {
   font-size: 18px;
@@ -361,10 +362,10 @@
   outline: none;
 }
 .fa-arrow-right-long:hover {
-  color: #fff;
+  color: #1cac27ad;
 }
 .fa-arrow-left-long:hover {
-  color: #fff;
+  color: #1cac27ad;
 }
 .slick-prev {
   right: 84px;
@@ -406,6 +407,10 @@
   line-height: 1.5;
   display: block;
 }
+.box-img-square:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
 .testimonial .testimonial-inner .title-testimonial {
   text-align: center;
   position: absolute;
@@ -426,6 +431,29 @@
   transform: translateX(-50%);
 }
 .testimonial {
+  margin: 50px 0;
+}
+.contact .box-contact .title-contact {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: green;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: -15px;
+}
+.contact .box-contact .title-contact::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  background-color: #f3b13f;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contact {
   margin: 50px 0;
 }
 
@@ -547,7 +575,7 @@
 .list-phone a:hover {
   text-decoration: none;
   color: #f3b13f;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out; 
 }
 .box-end-row .box-list-phone a {
   text-decoration: none;
@@ -555,7 +583,7 @@
 }
 .box-end-row .box-list-phone:hover a {
   color: #f3b13f;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .right-footer h3 {
   position: relative;
@@ -589,7 +617,7 @@
 }
 .right-footer ul li:hover a {
   color: #f3b13f;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .box-bottom-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -606,7 +634,7 @@
 }
 .bottom-footer p a:hover {
   color: #f3b13f;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .box-social-footer ul {
   list-style-type: none;
@@ -624,7 +652,7 @@
 }
 .box-social-footer ul li:hover i {
   color: #f3b13f;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .box-logo-footer {
   max-width: 100%;
@@ -823,6 +851,14 @@
 .img-diagram-warehouse img {
   width: 100%;
 }
+.box-img-exp:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.box-img-hn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
 
 /* bootstrap md 768px */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -860,10 +896,10 @@
     bottom: 72px;
     width: 100%;
   }
-    .order{
+  .order {
     order: 2;
   }
-  .box-social-footer{
+  .box-social-footer {
     order: 1;
   }
 }
@@ -911,10 +947,10 @@
   .box-square ul li {
     margin-bottom: 10px;
   }
-    .order{
+  .order {
     order: 2;
   }
-  .box-social-footer{
+  .box-social-footer {
     order: 1;
   }
 }
@@ -1018,10 +1054,10 @@
   .box-square ul li {
     margin-bottom: 10px;
   }
-  .order{
+  .order {
     order: 2;
   }
-  .box-social-footer{
+  .box-social-footer {
     order: 1;
   }
 }
