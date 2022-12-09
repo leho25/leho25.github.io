@@ -853,11 +853,11 @@
 }
 .box-img-exp:hover {
   transform: scale(1.1);
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .box-img-hn:hover {
   transform: scale(1.1);
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 /* bootstrap md 768px */
