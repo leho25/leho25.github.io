@@ -1,0 +1,394 @@
+:root {
+  --color-green: #4ab268;
+}
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.header-top .address-header p {
+  margin-bottom: 0;
+  color: #303b51;
+  font-size: 18px;
+  font-weight: 600;
+}
+.header-top .phone-header a p {
+  margin-bottom: 0;
+}
+.navbar-nav .nav-link.active:active {
+  color: #303a51;
+}
+.header-top .phone-header a {
+  text-decoration: none;
+}
+.hotline-header {
+  background: url("https://xaydungquangminh.com/assets/images/phone-46.png")
+    no-repeat left center;
+  display: inline-block;
+  padding: 7px 0 7px 55px;
+}
+.logo-header {
+  width: 25%;
+}
+.logo-header img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+.phone-header {
+  width: 20%;
+}
+.address-header {
+  width: 55%;
+}
+.hotline-header .hotline {
+  color: #ea0101;
+  font-size: 24px;
+  font-weight: bold;
+}
+.hotline-header p {
+  color: #000;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar {
+  background-color: var(--color-green);
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.slick-arrow {
+  max-width: 10%;
+  position: absolute;
+  top: 40%;
+  border: none;
+  background: rgba(123, 124, 119, 0.5);
+  z-index: 300;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+}
+.slick-prev {
+  text-align: left;
+  left: 0;
+}
+.slick-next {
+  text-align: right;
+  right: 0;
+}
+.slideshow {
+  max-width: 100%;
+}
+.slideshow .slick-img img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: fill;
+}
+.slick-list {
+  max-width: 100%;
+  max-height: 500px;
+}
+.introduce {
+  margin-top: 50px;
+}
+.introduce .introductory-text h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.introduce .introductory-text .describe {
+  line-height: 1.75;
+}
+.introduce .col-introductory-img .introductory-img img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.introduce .col-introductory-img .introductory-img {
+  overflow: hidden;
+  border-radius: 50px;
+}
+.introduce .col-introductory-img .introductory-img:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.build-house {
+  text-align: center;
+  margin: 30px 0;
+  background: url("https://xaydungquangminh.com/assets/images/tcat-b.png")
+    no-repeat bottom center;
+  position: relative;
+  padding: 0 0 35px 0;
+}
+.build-house h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.list-build-house .build-house-img img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  height: 250px;
+}
+.list-build-house .build-house-img img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.list-build-house .build-house-img {
+  overflow: hidden;
+}
+.list-build-house .build-house-title {
+  text-align: center;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.list-build-house .build-house-title h3 {
+  font-size: 16px;
+  color: var(--color-green);
+}
+.list-build-house .build-house-describe {
+  text-align: center;
+  padding: 0 5px;
+}
+.list-build-house {
+  border: 2px solid #f5f5f5;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.list {
+  justify-content: center;
+}
+.product {
+  margin-top: 70px;
+}
+.table-price-img img {
+  width: 100%;
+}
+.item-slider-project .img-project img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  height: 250px;
+}
+.slider-project {
+  display: flex;
+  justify-content: space-between;
+}
+.slick-initialized .slick-slide {
+  padding: 0 10px;
+}
+.item-slider-project .build-house-title {
+  text-align: center;
+  margin: 10px 0;
+  padding: 0 10px;
+  line-height: 1.5;
+}
+.item-slider-project .build-house-title h3 {
+  font-size: 16px;
+  color: var(--color-green);
+}
+.item-slider-project .build-house-describe {
+  text-align: center;
+  padding: 0 5px;
+  line-height: 1.5;
+}
+.slick-prev-project {
+  text-align: left;
+  left: -40px;
+}
+.slick-next-project {
+  text-align: right;
+  right: -40px;
+}
+.item-slider-project .img-project {
+  overflow: hidden;
+}
+.item-slider-project .img-project img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.title-construction-manual h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+.title-video h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 28px;
+  text-align: center;
+}
+.construction-manual-title-img {
+  text-align: center;
+  margin: 10px 0;
+  padding: 0 10px;
+  line-height: 1.5;
+}
+.construction-manual-title-img h3 {
+  font-size: 16px;
+  color: var(--color-green);
+}
+.img-construction-manual img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  height: 150px;
+  object-fit: cover;
+}
+.construction-manual-describe {
+  text-align: center;
+  padding: 0 5px;
+}
+.img-video img {
+  width: 50%;
+}
+.img-construction-manual {
+  overflow: hidden;
+}
+.img-construction-manual img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.list-video {
+  text-align: center;
+}
+.list-video .img-video {
+  margin-bottom: 10px;
+}
+.title-construction-manual {
+  margin: 30px 0;
+}
+.title-video {
+  margin: 30px 0;
+}
+.form-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.icon-social img {
+  width: 20px;
+}
+.form-gg p {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.form-search .fa-magnifying-glass {
+  margin-left: 10px;
+  color: #fff;
+}
+.form-search .fa-magnifying-glass:hover {
+  color: #526079;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-social i {
+  margin: 0 5px;
+}
+.icon-social {
+  text-align: center;
+}
+.icon-social i {
+  color: #fff;
+}
+.footer {
+  background-color: var(--color-green);
+}
+.info-company .name-company {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+.info-company .address-company {
+  font-size: 16px;
+  color: #fff;
+}
+.info-company .phone-company {
+  font-size: 16px;
+  color: #fff;
+}
+.info-company .phone-company a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.info-company .phone-company a:hover {
+  transition: all 0.3s ease-in-out;
+  color: #526079;
+}
+.info-company .website-company {
+  font-size: 16px;
+  color: #fff;
+}
+.info-company .website-company a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.info-company .website-company a:hover {
+  color: #526079;
+  transition: all 0.3s ease-in-out;
+}
+.icon-social i:hover {
+  color: #526079;
+}
+.icon-social i:hover img {
+  background-color: #526079;
+  transition: all 0.3s ease-in-out;
+}
+.icon-social i img {
+  background-color: #fff;
+}
+.footer .item-row {
+  align-items: center;
+  padding: 50px 0;
+}
+.info-company {
+  line-height: 1;
+}
+.line hr {
+  width: 100%;
+  height: 2px;
+  color: #fff;
+  margin: 5px 0;
+}
+.line .text p {
+  margin-bottom: 0;
+}
+.line .text .name {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+.line .text .tax-code {
+  color: #fff;
+  padding-bottom: 10px;
+}
+.product:nth-child(2n + 1) {
+  background: #f7f7f7;
+  padding: 30px 0 50px 0;
+}
+.img-construction-manual-title img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  height: 400px;
+  object-fit: cover;
+}
+.img-construction-manual-title {
+  overflow: hidden;
+}
+.img-construction-manual-title img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
