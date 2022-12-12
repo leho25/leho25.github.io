@@ -8,7 +8,7 @@
   align-items: center;
   padding: 0;
 }
-.header-top .address-header p {
+.header-top .address-header .address-company {
   margin-bottom: 0;
   color: #303b51;
   font-size: 18px;
@@ -42,6 +42,13 @@
 }
 .address-header {
   width: 55%;
+  text-align: center;
+}
+.address-header .name-address {
+  font-size: 26px;
+  color: var(--color-green);
+  font-weight: bold;
+  margin-bottom: 0;
 }
 .hotline-header .hotline {
   color: #ea0101;
@@ -162,6 +169,8 @@
   padding-right: 0;
   margin-left: 40px;
   margin-right: 40px;
+  background-color: #fff;
+  border-radius: 10px;
 }
 .list {
   justify-content: center;
@@ -169,8 +178,16 @@
 .product {
   margin-top: 70px;
 }
+.table-price-img {
+  overflow: hidden;
+}
 .table-price-img img {
   width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.table-price-img img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 .item-slider-project .img-project img {
   width: 100%;
@@ -181,7 +198,7 @@
   display: flex;
   justify-content: space-between;
 }
-.slick-initialized .slick-slide {
+.product .slick-initialized .slick-slide {
   padding: 0 10px;
 }
 .item-slider-project .build-house-title {
@@ -202,10 +219,12 @@
 .slick-prev-project {
   text-align: left;
   left: -40px;
+  padding-bottom: 4px;
 }
 .slick-next-project {
   text-align: right;
   right: -40px;
+  padding-bottom: 4px;
 }
 .item-slider-project .img-project {
   overflow: hidden;
@@ -282,6 +301,11 @@
   text-align: center;
   color: #fff;
 }
+.form-gg {
+  border: 1px solid green;
+  padding: 10px 0;
+  box-shadow: 0 0 5px 0;
+}
 .form-search .fa-magnifying-glass {
   margin-left: 10px;
   color: #fff;
@@ -304,21 +328,21 @@
   background-color: var(--color-green);
 }
 .info-company .name-company {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
 }
 .info-company .address-company {
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
 }
 .info-company .phone-company {
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
 }
 .info-company .phone-company a {
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
   text-decoration: none;
 }
@@ -327,11 +351,11 @@
   color: #526079;
 }
 .info-company .website-company {
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
 }
 .info-company .website-company a {
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
   text-decoration: none;
 }
@@ -354,7 +378,7 @@
   padding: 50px 0;
 }
 .info-company {
-  line-height: 1;
+  line-height: 1.5;
 }
 .line hr {
   width: 100%;
@@ -366,13 +390,15 @@
   margin-bottom: 0;
 }
 .line .text .name {
-  font-size: 20px;
-  font-weight: bold;
   text-transform: uppercase;
   color: #fff;
 }
 .line .text .tax-code {
   color: #fff;
+}
+.line .text {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 10px;
 }
 .product:nth-child(2n + 1) {
