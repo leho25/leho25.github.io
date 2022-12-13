@@ -396,6 +396,14 @@
 .line .text .tax-code {
   color: #fff;
 }
+.line .text .tax-code a{
+  color: #fff;
+  text-decoration: none;
+}
+.line .text .tax-code a:hover{
+  color: #303b51;
+  text-decoration: none;
+}
 .line .text {
   display: flex;
   justify-content: space-between;
