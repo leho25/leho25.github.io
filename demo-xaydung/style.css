@@ -396,13 +396,17 @@
 .line .text .tax-code {
   color: #fff;
 }
-.line .text .tax-code a{
+  .design{
   color: #fff;
   text-decoration: none;
+  text-transform: lowercase;
 }
-.line .text .tax-code a:hover{
+.text span{
+  text-transform: none;
+}
+ .design:hover{
   color: #303b51;
-  text-decoration: none;
+  /* text-transform: lowercase; */
 }
 .line .text {
   display: flex;
