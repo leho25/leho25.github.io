@@ -1,6 +1,12 @@
 :root {
   --color-green: #4ab268;
 }
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+}
 .header-top {
   display: flex;
   flex-direction: row;
@@ -139,38 +145,77 @@
   text-transform: uppercase;
 }
 .list-build-house .build-house-img img {
+  object-fit: fill;
   width: 100%;
   transition: 0.3s ease-in-out;
-  height: 250px;
+  height: 400px;
 }
-.list-build-house .build-house-img img:hover {
+/* .list-build-house .build-house-img img:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
-}
+} */
 .list-build-house .build-house-img {
-  overflow: hidden;
+  position: relative;
 }
-.list-build-house .build-house-title {
-  text-align: center;
-  margin: 10px 0;
-  padding: 0 10px;
+/* .list-build-house .box-item .build-house-img::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.15);
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.8s ease-in-out 0s;
+} */
+/* .list-build-house .box-item  .build-house-img::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.15);
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  transition: all 0.8s ease-in-out 0s;
+} */
+.box-item:hover .build-house-img::after {
+  width: 100%;
+  height: 100%;
 }
-.list-build-house .build-house-title h3 {
-  font-size: 16px;
-  color: var(--color-green);
+.box-item:hover .build-house-img::before {
+  width: 100%;
+  height: 100%;
 }
-.list-build-house .build-house-describe {
-  text-align: center;
-  padding: 0 5px;
+.list-build-house .build-house-box {
+  padding: 20px 20px;
+  position: absolute;
+  width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  text-align: left;
+}
+.list-build-house .build-house-box .build-house-title h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
 }
 .list-build-house {
   border: 2px solid #f5f5f5;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 40px;
-  margin-right: 40px;
   background-color: #fff;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+/* .box-item:hover .build-house-img{
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+} */
+.list-build-house .build-house-box .build-house-title a {
+  text-decoration: none;
+}
+.build-house-title p {
+  margin-bottom: 0;
 }
 .list {
   justify-content: center;
@@ -189,7 +234,7 @@
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
-.item-slider-project .img-project img {
+/* .item-slider-project .img-project img {
   width: 100%;
   transition: 0.3s ease-in-out;
   height: 250px;
@@ -197,25 +242,66 @@
 .slider-project {
   display: flex;
   justify-content: space-between;
-}
-.product .slick-initialized .slick-slide {
+} */
+/* .product .slick-initialized .slick-slide {
   padding: 0 10px;
-}
-.item-slider-project .build-house-title {
+} */
+/* .item-slider-project .build-house-title {
   text-align: center;
   margin: 10px 0;
   padding: 0 10px;
   line-height: 1.5;
+} */
+.button {
+  padding: 10px 20px;
+  border: 0 solid transparent;
+  outline: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 12px;
+  position: relative;
 }
-.item-slider-project .build-house-title h3 {
+.button-text {
+  background-color: var(--color-green);
+  text-align: center;
+  color: #fff;
+}
+.button::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 50%;
+  width: 0;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.button::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 0;
+  left: 0;
+  right: auto;
+  height: 50%;
+  width: 0;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.button:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+.button:hover::before {
+  width: 100%;
+  left: auto;
+  right: 0;
+}
+/* .item-slider-project .build-house-title h3 {
   font-size: 16px;
   color: var(--color-green);
-}
-.item-slider-project .build-house-describe {
-  text-align: center;
-  padding: 0 5px;
-  line-height: 1.5;
-}
+} */
 .slick-prev-project {
   text-align: left;
   left: -40px;
@@ -489,7 +575,7 @@
     flex-direction: column;
     text-align: center;
   }
-  .slideshow .slick-img img{
+  .slideshow .slick-img img {
     height: 700px;
   }
 }
@@ -503,14 +589,14 @@
   .address-header {
     width: 100%;
   }
-    .table-price-img {
+  .table-price-img {
     margin-bottom: 10px;
   }
-    .line .text {
+  .line .text {
     flex-direction: column;
     text-align: center;
   }
-    .logo img {
+  .logo img {
     width: 100%;
     height: 250px;
     object-fit: contain;
@@ -518,7 +604,7 @@
   .footer .item-row {
     padding-top: 0;
   }
-  .slideshow .slick-img img{
+  .slideshow .slick-img img {
     height: 700px;
   }
 }
