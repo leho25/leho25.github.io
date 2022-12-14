@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
 }
 .header-top {
   display: flex;
@@ -192,6 +192,7 @@
   max-height: 100%;
   bottom: 0;
   text-align: left;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
 }
 .list-build-house .build-house-box .build-house-title h3 {
   font-size: 20px;
@@ -234,7 +235,9 @@
 }
 .box .item-img img {
   width: 100%;
-  height: auto;
+  object-position: center;
+  height: 300px;
+  object-fit: fill;
   transition: 0.3s ease-in-out;
 }
 .box .item-img {
@@ -251,6 +254,7 @@
 .box-text h3 {
   font-size: 26px;
   margin: 5px 0;
+  font-weight: 700;
 }
 .list-build-project .box .item-img {
   position: relative;
@@ -452,10 +456,32 @@
 }
 .box-footer {
   margin: 20px;
-  border: 1px solid #fff;
+  border: 1px solid transparent;
   padding: 20px 30px;
   background-color: var(--color-green);
   border-radius: 50px 0;
+}
+.footer-inner {
+  color: #fff;
+}
+.footer-inner h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer-inner ul li {
+  font-size: 15px;
+  padding: 5px 0;
+  list-style-type: none;
+}
+.footer-inner ul li .fa-angle-right {
+  font-size: 12px;
+  color: var(--color-green);
+}
+.fa-angle-right:before {
+  margin-left: -30px;
+}
+.fix-height {
+  height: 350px;
 }
 .logo img {
   width: 100%;
@@ -474,20 +500,21 @@
 .info-company .phone-company {
   font-size: 16px;
   color: #fff;
-  display: flex;  
+  display: flex;
 }
 .info-company .phone-company a {
   font-size: 16px;
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
 }
-.phone-company .phone{
+.phone-company .phone {
   margin-right: 20px;
 }
-.phone-company .phone .fa-phone{
+.phone-company .phone .fa-phone {
   margin-right: 5px;
 }
-.phone-company .website .fa-globe{
+.phone-company .website .fa-globe {
   margin-right: 5px;
 }
 .info-company .phone-company a:hover {
@@ -564,6 +591,41 @@
 .img-construction-manual-title img:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
+}
+.bg-inner {
+  background: url(https://nhadephoangthien.vn/wp-content/uploads/2021/12/thiet-ke-xay-dung-bg.jpg);
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  /* background-position: 50% 50%; */
+  height: 600px;
+  width: 100%;
+  background-position: 0% 100%;
+  display: flex;
+  align-items: center;
+}
+.wrap{
+  text-align: center
+}
+.wrap .text h2{
+      font-size: 50px;
+    font-weight: bold;
+}
+.content {
+  position: relative;
+}
+.wrap {
+  color: #fff;
+}
+.is-divider{
+    width: 100%;
+    height: 3px;
+    max-width: 30px;
+    background-color: rgba(255,255,255,.3);
+    display: block;
+    margin: 20px auto;
+}
+.wrap{
+  font-size: 18px;
 }
 /* bootstrap md 768px */
 @media (min-width: 768px) and (max-width: 991px) {
