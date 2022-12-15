@@ -671,6 +671,9 @@
 .item-center {
   align-items: center;
 }
+.fix-product{
+  margin: 0;
+}
 /* bootstrap md 768px */
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-toggler {
