@@ -203,7 +203,7 @@
   background: url(../images/about.png) no-repeat right 150px;
 }
 .btn-see-more {
-  padding: 12px  25px;
+  padding: 12px 25px;
   background-color: #207dff;
   color: #fff;
   text-transform: uppercase;
@@ -212,7 +212,7 @@
   margin-left: 110px;
   font-weight: bold;
   font-family: Arial;
-  transition: .3s;
+  transition: 0.3s;
 }
 .btn-see-more:hover {
   background-color: #fe5f55;
@@ -220,4 +220,48 @@
 }
 .btn-see-more .fa-regular {
   margin-left: 10px;
+}
+.title-main {
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 35px;
+}
+.title-main p {
+  position: absolute;
+  padding-bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 34px;
+  font-weight: bold;
+  font-family: Arial;
+  color: #fe5f55;
+}
+.title-main p::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  border-bottom: 5px solid var(--color);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #207dff;
+  height: 5px;
+  bottom: 0;
+}
+.title-name {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 35px;
+  background: url(../images//be.png) 0 20px repeat-x;
+}
+.title-name .product {
+  position: absolute;
+  padding-bottom: 15px;
+  font-size: 34px;
+  font-weight: bold;
+  font-family: Arial;
+  color: #fe5f55;
+  background: #fff;
+  padding-right: 10px;
 }
