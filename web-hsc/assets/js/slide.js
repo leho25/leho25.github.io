@@ -4,4 +4,6 @@ $(".slider").slick({
   slidesToScroll: 1,
   prevArrow: '<button class="slick-prev"> < </button>',
   nextArrow: '<button class="slick-next"> > </button>',
+  fade: true,
+  fadeSpeed: 1000,
 });
