@@ -551,6 +551,7 @@
 .item-news-img {
   margin-right: 10px;
   height: 130px;
+  width: 145px;
   flex-shrink: 0;
   overflow: hidden;
 }
@@ -581,8 +582,11 @@
   display: flex !important;
   justify-content: center;
   align-items: center;
-  margin: 20px 10px;
+  margin: 10px 10px;
 }
+/* .list-news .slick-initialized .slick-slide{
+    margin: 20px 10px;
+} */
 .slider-nav {
   overflow: hidden;
   width: 100%;
@@ -594,6 +598,7 @@
 .slide-btn img {
   width: 100px;
   height: 100px;
+  object-fit: cover;
 }
 .slider-nav .slick-current,
 .slider-nav .slick-slide:hover {

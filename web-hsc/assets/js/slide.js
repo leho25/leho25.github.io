@@ -19,7 +19,7 @@ $(".list-feature-news").slick({
 $(".list-news").slick({
   vertical: true,
   infinite: true,
-  slidesToShow: 5,
+  slidesToShow: 7,
   slidesToScroll: 1,
   speed: 1000,
   autoplaySpeed: 3000,
