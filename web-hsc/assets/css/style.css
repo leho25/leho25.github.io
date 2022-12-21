@@ -602,3 +602,146 @@
   border-color: #207dff;
   border-style: solid;
 }
+.wrap-form {
+  background: url(../images/form.png) top center/cover no-repeat;
+  padding: 40px 0;
+}
+.wrap-form .title-main span {
+  color: #fff;
+  margin-top: 20px;
+}
+.slogan {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.row {
+  display: flex;
+  margin-top: 40px;
+}
+.col-4 {
+  flex: 1;
+  margin-left: 20px;
+}
+.col-12 {
+  flex: 1;
+  margin-left: 20px;
+}
+.col-4 input {
+  width: 100%;
+  background: #fff0;
+  border: none;
+  border-bottom: 1px solid #808181;
+  color: #fff;
+  padding: 10px;
+}
+.col-12 textarea {
+  width: 100%;
+  background: #fff0;
+  border: none;
+  border-bottom: 1px solid #808181;
+  color: #fff;
+}
+.form {
+  margin-left: -20px;
+  position: relative;
+}
+::placeholder {
+  color: #fff;
+}
+.button-sign-up {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+}
+.button-sign-up input[type="submit"] {
+  padding: 20px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: red;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 5px 5px 0 0;
+  border: none;
+}
+.footer {
+  background: url(../images/bgf.png) top center;
+}
+.footer-inner {
+  padding-top: 50px;
+}
+.footer-inner .row-footer {
+  display: flex;
+}
+.col-6-footer {
+  flex: 2;
+}
+.col-3-footer {
+  flex: 1;
+}
+.title-footer {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 15px;
+}
+.title-footer::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 5px;
+  background-color: red;
+  left: 0;
+  bottom: 0;
+}
+.text-address {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.info-footer {
+  margin-top: 30px;
+}
+.info-footer p {
+  margin-bottom: 20px;
+  color: #fff;
+}
+.info-footer p a {
+  text-decoration: none;
+  color: #000000;
+}
+.info-footer p a:hover {
+  text-decoration: underline;
+}
+.info-footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.info-footer ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.info-footer ul li a img {
+  margin-right: 10px;
+}
+.info-footer ul li {
+  margin-bottom: 10px;
+}
+.footer-final-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.footer-final-inner p {
+  color: #fff;
+}
+.footer-final {
+  color: #fff;
+  border-top: 1px solid rgb(255 255 255 / 34%);
+}
