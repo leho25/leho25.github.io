@@ -47,7 +47,7 @@
   display: flex;
   width: 65%;
 }
-.fixed-menu{
+.fixed-menu {
   position: fixed;
   z-index: 1000;
   background-color: #fff;
@@ -839,7 +839,7 @@
   .feature-news {
     flex-direction: column;
   }
-  .paging-product{
+  .paging-product {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -887,10 +887,10 @@
   .footer-inner .row-footer {
     flex-direction: column;
   }
-  .info-product .name-product{
+  .info-product .name-product {
     font-size: 18px;
   }
-  .info-product .name-product::before{
+  .info-product .name-product::before {
     bottom: -5px;
   }
 }
@@ -914,5 +914,8 @@
   }
   .menu-ul ul li ul li {
     width: 70%;
+  }
+  .list-feature-news {
+    margin-bottom: 50px;
   }
 }
