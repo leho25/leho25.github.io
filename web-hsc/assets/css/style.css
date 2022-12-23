@@ -839,6 +839,9 @@
   .feature-news {
     flex-direction: column;
   }
+  .paging-product{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -883,6 +886,12 @@
   }
   .footer-inner .row-footer {
     flex-direction: column;
+  }
+  .info-product .name-product{
+    font-size: 18px;
+  }
+  .info-product .name-product::before{
+    bottom: -5px;
   }
 }
 @media screen and (max-width: 575px) {

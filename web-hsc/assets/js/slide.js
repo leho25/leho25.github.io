@@ -12,18 +12,18 @@ $(".list-feature-news").slick({
   infinite: true,
   slidesToShow: 2,
   slidesToScroll: 1,
-  // speed: 1000,
-  // autoplaySpeed: 2000,
-  // autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 2000,
+  autoplay: true,
 });
 $(".list-news").slick({
   vertical: true,
   infinite: true,
   slidesToShow: 7,
   slidesToScroll: 1,
-  // speed: 1000,
-  // autoplaySpeed: 3000,
-  // autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 3000,
+  autoplay: true,
 });
 
 var numSlick = 0;
