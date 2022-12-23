@@ -44,7 +44,15 @@
   height: auto;
 }
 .menu-ul {
+  display: flex;
   width: 65%;
+}
+.fixed-menu{
+  position: fixed;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  top: 0;
 }
 .menu-ul ul {
   display: flex;
@@ -825,10 +833,10 @@
   .gird-service {
     grid-template-columns: 1fr;
   }
-  .item-feature{
+  .item-feature {
     width: 100%;
   }
-  .feature-news{
+  .feature-news {
     flex-direction: column;
   }
 }
@@ -888,5 +896,14 @@
   }
   .box-gird-service {
     grid-template-columns: 1fr;
+  }
+  .paging-product {
+    grid-template-columns: 1fr;
+  }
+  .menu-ul ul {
+    align-items: flex-start;
+  }
+  .menu-ul ul li ul li {
+    width: 70%;
   }
 }

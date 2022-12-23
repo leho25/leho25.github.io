@@ -77,3 +77,13 @@ $(".document").ready(function () {
     $(".menu-ul").slideToggle();
   });
 });
+$("document").ready(function () {
+  $(window).scroll(function (e) {
+    var pos_body = $("html,body").scrollTop();
+    if (pos_body > 20) {
+      $(".menu").addClass("fixed-menu");
+    } else {
+      $(".menu").removeClass("fixed-menu");
+    }
+  });
+});
