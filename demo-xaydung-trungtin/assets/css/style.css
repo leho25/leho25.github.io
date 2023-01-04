@@ -80,12 +80,12 @@ p {
 }
 
 .navbar {
-background-color: #156005;
-    padding: 0 15px;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    bottom: -20px;
+  background-color: #156005;
+  padding: 0 15px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  bottom: -20px;
 }
 .nav-link {
   color: #fff;
@@ -132,30 +132,296 @@ background-color: #156005;
   text-align: right;
   right: 20px;
 }
-.fr-flex{
+.fr-flex {
   height: 30px;
   margin-top: 5px;
 }
-.btn-search{
+.btn-search {
   color: #fff;
   display: flex;
   align-items: center;
 }
-.btn:hover{
-   color: yellow;
+.btn:hover {
+  color: yellow;
   background-color: #0a4e25;
 }
-.intro-welcome-service { 
+.intro-welcome-service {
   overflow: hidden;
-} 
+}
 .intro-welcome-service .left-to-right {
   position: relative;
   animation: CSSright linear 10s infinite;
-} 
-@keyframes CSSright {
-  0% { right: -100% }
-  100% { right: 100% }
 }
-.menu{
+@keyframes CSSright {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+.menu {
   position: relative;
+}
+.address-header {
+  font-size: 20px;
+  font-weight: 600;
+}
+.info-company {
+  text-align: center;
+  margin-top: 50px;
+}
+.description-company p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.description-company {
+  padding: 0 200px;
+}
+.title-company {
+  text-transform: uppercase;
+  color: green;
+  margin-bottom: 35px;
+}
+.title-company h1 {
+  font-size: 30px;
+}
+.slick-img-info img {
+  width: 100px;
+  height: 100px;
+  object-fit: fill;
+}
+.slick-img-info {
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.slick-initialized .slick-slide {
+  /* display: flex;
+  justify-content: center; */
+}
+.slick-img-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  transform: 0.3s;
+}
+.slick-info {
+  width: 300px !important;
+  /* border: 1px solid; */
+  margin: 0 10px;
+  overflow: hidden;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #2c2c2c27;
+  position: relative;
+}
+.text-slideshow h3 {
+  margin: 5px 0;
+}
+.text-slideshow {
+  transition: 0.3s;
+}
+.slick-info:hover .slick-img-info,
+.slick-info:hover .text-slideshow {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.slideshow-info {
+  margin: 40px 0;
+  height: 200px;
+}
+.text-split {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.slick-info:hover {
+}
+
+.btn-add button {
+  padding: 10px 20px;
+  background-color: grey;
+  color: #fff;
+  border: 1px solid;
+  transition: all 0.3s;
+}
+.btn-add button:hover {
+  color: yellow;
+  background-color: #156005;
+  transition: all 0.3s;
+}
+.inner-col-img img {
+  width: 100%;
+}
+.inner-col {
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #2c2c2c27;
+  position: relative;
+  background-color: #156005;
+}
+.inner-col:hover,
+.slick-design.slick-slide:hover {
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  background: #156005;
+}
+.inner-col-img {
+  overflow: hidden;
+}
+.inner-col-img img {
+  transition: all 0.3s;
+}
+.inner-col-img:hover img,
+.slick-img-design:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.inner-col-des {
+  text-align: center;
+}
+.inner-col-des .col-title h3 {
+  font-size: 24px;
+  transition: all 0.3s;
+  color: #fff;
+  text-transform: uppercase;
+}
+.inner-col-des .col-des p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+}
+.inner-col:hover .inner-col-des .col-title h3,
+.slick-design:hover .text-slideshow-design .slideshow-title h3 {
+  color: yellow;
+  transition: all 0.3s;
+}
+.slideshow-des p {
+  color: #fff;
+}
+.slideshow-title h3 {
+  color: #fff;
+}
+.title-design {
+  text-transform: uppercase;
+  color: green;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.title-design h1 {
+  font-size: 30px;
+  font-family: Arial;
+  font-weight: bold;
+}
+.slick-design.slick-slide {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #2c2c2c27;
+  position: relative;
+  background-color: #156005;
+}
+.slick-img-design {
+  width: 100%;
+  margin: 10px;
+
+  overflow: hidden;
+}
+.slick-img-design img {
+  width: 100%;
+  height: 125px;
+}
+.slideshow-title h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.form-control:focus {
+  border-color: yellow;
+}
+.btn-add {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.inner-col::before,
+.inner-col::after,
+.slick-info::before,
+.slick-info::after,
+.slick-design::before,
+.slick-design::after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.draw {
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.draw::before,
+.draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover::before,
+.draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  /* border-top-color: #60daaa;
+  border-right-color: #60daaa; */
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  /* border-bottom-color: #60daaa;
+  border-left-color: #60daaa; */
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+}
+.meet::after {
+  top: 0;
+  left: 0;
+}
+.meet:hover::before {
+  border-top-color: #24ca03;
+  border-right-color: #24ca03;
+}
+.meet:hover::after {
+  border-bottom-color: #f5f10d;
+  border-left-color: #f5f10d;
+  -webkit-transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+  transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+}
+.construct .inner-col-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.construction-project-slideshow .inner-col {
+  margin: 0 10px;
+}
+.construction-project-slideshow .slick-list {
+  margin: 0 -10px;
+}
+.construction-project-slideshow{
+  margin-bottom: 40px;
 }
