@@ -22,7 +22,7 @@ $(".slideshow-info").slick({
 });
 $(".slideshow-design").slick({
   infinite: true,
-  slidesToShow: 4,
+  slidesToShow: 5,
   slidesToScroll: 1,
   arrows: false,
   // prevArrow:

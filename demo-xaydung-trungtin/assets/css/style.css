@@ -1,5 +1,25 @@
+a {
+  text-decoration: none;
+  color: black;
+}
 p {
   margin-bottom: 0;
+}
+.design,
+.project,
+.process {
+  background: #eeeeee;
+}
+.project,
+.process {
+  padding-bottom: 35px;
+}
+.footer {
+  background-color: #0c5027;
+}
+.header {
+  background: url(../images/bg-header-1375.jpg) no-repeat center;
+  background-size: cover;
 }
 .container {
   max-width: 1310px;
@@ -220,6 +240,7 @@ p {
 }
 .text-slideshow {
   transition: 0.3s;
+  text-align: center;
 }
 .slick-info:hover .slick-img-info,
 .slick-info:hover .text-slideshow {
@@ -255,6 +276,7 @@ p {
 }
 .inner-col-img img {
   width: 100%;
+  height: 250px;
 }
 .inner-col {
   padding: 5px 10px;
@@ -311,6 +333,7 @@ p {
   margin-bottom: 35px;
   text-align: center;
   font-size: 30px;
+  padding-top: 35px;
 }
 
 .title-design h1 {
@@ -404,9 +427,13 @@ p {
 .meet:hover::before {
   border-top-color: #24ca03;
   border-right-color: #24ca03;
+  /* border-radius: 50%; */
+
+  /* border-top-color: ; */
 }
 .meet:hover::after {
   border-bottom-color: #f5f10d;
+  /* border-radius: 50%; */
   border-left-color: #f5f10d;
   -webkit-transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
   transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
@@ -422,6 +449,159 @@ p {
 .construction-project-slideshow .slick-list {
   margin: 0 -10px;
 }
-.construction-project-slideshow{
+.construction-project-slideshow {
   margin-bottom: 40px;
+}
+.slideshow-process {
+  display: flex;
+  justify-content: space-between;
+}
+.effect {
+  position: relative;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #2c2c2c27;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  padding: 20px;
+}
+.effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed green;
+  border-radius: 50%;
+  /* animation: chuyendong1 3s infinite ease-in; */
+}
+@keyframes chuyendong1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.slick-process {
+  width: 200px;
+  height: 200px;
+  border-right-width: 20px;
+  border-right-color: green;
+  border-right-style: solid;
+  border-top-width: 20px;
+  border-top-color: green;
+  border-top-style: solid;
+  border-left-width: 20px;
+  border-left-color: yellow;
+  border-left-style: solid;
+  transform: rotate(120deg);
+  border-bottom-width: 20px;
+  border-bottom-color: yellow;
+  border-bottom-style: solid;
+  position: relative;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+
+  /* z-index: 1; */
+}
+.slick-process::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 22px;
+  height: 20px;
+  transform: rotate(45deg) translateY(-50px) translateX(-41px);
+  left: 0;
+}
+.effect:hover:before {
+  animation: chuyendong1 3s infinite ease-in;
+}
+.slick-process::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 22px;
+  height: 20px;
+  transform: translateY(68px) rotate(45deg) translateX(-7px);
+  right: 0;
+}
+.text-slideshow-process {
+  transition: 0.3s;
+  text-align: center;
+  transform: rotate(-121deg);
+}
+.text-slideshow-process h3 {
+  font-size: 26px;
+}
+.name-company-footer {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 70px;
+}
+.name-company-footer h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+.address-footer p,
+.hotline-footer p,
+.email-footer p,
+.website-footer p {
+  font-size: 20px;
+  line-height: 2;
+  color: #fff;
+}
+.hotline-footer a:hover,
+.email-footer a:hover,
+.website-footer a:hover {
+  color: yellow;
+  transition: all 0.3s;
+}
+.hotline-footer a,
+.email-footer a,
+.website-footer a {
+  color: #fff;
+  transition: all 0.3s;
+}
+.bottom-footer {
+  text-align: center;
+  border-top: 1px solid green;
+  padding: 6px 0;
+  color: #fff;
+}
+.bottom-footer a:hover {
+  color: yellow;
+  transition: all 0.3s;
+}
+.bottom-footer a {
+  color: #fff;
+  transition: all 0.3s;
+}
+.footer .title-design {
+  color: #fff;
+}
+
+.icon-social-bottom {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+}
+.icon-social-bottom i {
+  margin: 0 10px;
+  transition: all 0.3s;
+}
+.icon-social-bottom i:hover {
+  color: yellow;
+  transition: all 0.3s;
 }
