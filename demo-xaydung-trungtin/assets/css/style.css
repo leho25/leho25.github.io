@@ -205,7 +205,8 @@ p {
   margin-bottom: 35px;
 }
 .title-company h1 {
-  font-size: 30px;
+  font-size: 28px;
+  font-weight: 700;
 }
 .slick-img-info img {
   width: 100px;
@@ -234,6 +235,7 @@ p {
   border: 0;
   box-shadow: inset 0 0 0 1px #2c2c2c27;
   position: relative;
+  border-radius: 8px;
 }
 .text-slideshow h3 {
   margin: 5px 0;
@@ -271,7 +273,7 @@ p {
 }
 .btn-add button:hover {
   color: yellow;
-  background-color: #156005;
+  background-color: #0a4e25;
   transition: all 0.3s;
 }
 .inner-col-img img {
@@ -279,17 +281,19 @@ p {
   height: 250px;
 }
 .inner-col {
-  padding: 5px 10px;
+  padding: 10px;
   margin-bottom: 20px;
   border: 0;
   box-shadow: inset 0 0 0 1px #2c2c2c27;
   position: relative;
-  background-color: #156005;
+  background-color: #0a4e25;
+  border-radius: 8px;
 }
 .inner-col:hover,
 .slick-design.slick-slide:hover {
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-  background: #156005;
+  background: #0a4e25;
+  border-radius: 8px;
 }
 .inner-col-img {
   overflow: hidden;
@@ -306,10 +310,13 @@ p {
   text-align: center;
 }
 .inner-col-des .col-title h3 {
-  font-size: 24px;
+  font-size: 21px;
   transition: all 0.3s;
   color: #fff;
   text-transform: uppercase;
+}
+.inner-col-des .col-title {
+  margin: 5px 0;
 }
 .inner-col-des .col-des p {
   font-size: 15px;
@@ -337,7 +344,7 @@ p {
 }
 
 .title-design h1 {
-  font-size: 30px;
+  font-size: 32px;
   font-family: Arial;
   font-weight: bold;
 }
@@ -348,7 +355,8 @@ p {
   border: 0;
   box-shadow: inset 0 0 0 1px #2c2c2c27;
   position: relative;
-  background-color: #156005;
+  background-color: #0a4e25;
+  border-radius: 8px;
 }
 .slick-img-design {
   width: 100%;
@@ -361,7 +369,7 @@ p {
   height: 125px;
 }
 .slideshow-title h3 {
-  font-size: 24px;
+  font-size: 21px;
   text-transform: uppercase;
 }
 .form-control:focus {
@@ -396,15 +404,18 @@ p {
 .draw::before {
   top: 0;
   left: 0;
+  border-radius: 8px;
 }
 .draw::after {
   bottom: 0;
   right: 0;
+  border-radius: 8px;
 }
 .draw:hover::before,
 .draw:hover::after {
   width: 100%;
   height: 100%;
+  border-radius: 8px;
 }
 .draw:hover::before {
   /* border-top-color: #60daaa;
@@ -423,10 +434,12 @@ p {
 .meet::after {
   top: 0;
   left: 0;
+  border-radius: 8px;
 }
 .meet:hover::before {
   border-top-color: #24ca03;
   border-right-color: #24ca03;
+  border-radius: 8px;
   /* border-radius: 50%; */
 
   /* border-top-color: ; */
@@ -435,6 +448,7 @@ p {
   border-bottom-color: #f5f10d;
   /* border-radius: 50%; */
   border-left-color: #f5f10d;
+  border-radius: 8px;
   -webkit-transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
   transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
 }
@@ -590,7 +604,9 @@ p {
 .footer .title-design {
   color: #fff;
 }
-
+.footer .title-design h1 {
+  font-size: 30px;
+}
 .icon-social-bottom {
   width: 100%;
   text-align: center;

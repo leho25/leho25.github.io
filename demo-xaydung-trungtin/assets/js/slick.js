@@ -42,7 +42,6 @@ $(".construction-project-slideshow").slick({
     '<button class="slick-prev"> <i class="fa-solid fa-chevron-left"></i> </button>',
   nextArrow:
     '<button class="slick-next"> <i class="fa-solid fa-chevron-right"></i> </button>',
-  // autoplay: true,
-  // autoplaySpeed: 3000,
-  
+  autoplay: true,
+  autoplaySpeed: 3000,
 });
