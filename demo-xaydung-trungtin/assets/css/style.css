@@ -201,7 +201,7 @@ p {
 }
 .title-company {
   text-transform: uppercase;
-  color: green;
+  color: red;
   margin-bottom: 35px;
 }
 .title-company h1 {
@@ -286,13 +286,13 @@ p {
   border: 0;
   box-shadow: inset 0 0 0 1px #2c2c2c27;
   position: relative;
-  background-color: #0a4e25;
+  background-color: #156005;
   border-radius: 8px;
 }
 .inner-col:hover,
 .slick-design.slick-slide:hover {
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-  background: #0a4e25;
+  background: #156005;
   border-radius: 8px;
 }
 .inner-col-img {
@@ -336,7 +336,7 @@ p {
 }
 .title-design {
   text-transform: uppercase;
-  color: green;
+  color: red;
   margin-bottom: 35px;
   text-align: center;
   font-size: 30px;
@@ -355,7 +355,7 @@ p {
   border: 0;
   box-shadow: inset 0 0 0 1px #2c2c2c27;
   position: relative;
-  background-color: #0a4e25;
+  background-color: #156005;
   border-radius: 8px;
 }
 .slick-img-design {
@@ -497,12 +497,13 @@ p {
 }
 @keyframes chuyendong1 {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(120deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(480deg);
   }
 }
+
 .slick-process {
   width: 200px;
   height: 200px;
@@ -523,8 +524,12 @@ p {
   border-radius: 100%;
   display: flex;
   align-items: center;
+  /* animation: chuyendong1 3s infinite ease-in; */
 
   /* z-index: 1; */
+}
+.slick-process:hover {
+  /* animation: chuyendong1 3s infinite ease-in; */
 }
 .slick-process::before {
   content: "";
@@ -560,7 +565,6 @@ p {
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 600;
-  padding: 0 70px;
 }
 .name-company-footer h1 {
   font-size: 28px;
@@ -602,7 +606,7 @@ p {
   transition: all 0.3s;
 }
 .footer .title-design {
-  color: #fff;
+  color: yellow;
 }
 .footer .title-design h1 {
   font-size: 30px;
