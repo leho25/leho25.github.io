@@ -282,7 +282,7 @@ p {
   height: 250px;
 }
 .inner-col {
-  padding: 6px;
+  padding: 6px 6px;
   margin-bottom: 20px;
   border: 0;
   box-shadow: inset 0 0 0 1px #2c2c2c27;
