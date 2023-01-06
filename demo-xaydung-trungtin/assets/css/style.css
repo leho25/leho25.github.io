@@ -32,7 +32,7 @@ p {
 }
 .welcome-service {
   /* height: 50px; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   padding: 10px 0;
 }
 .logo-header {
@@ -91,7 +91,8 @@ p {
 .header {
   text-align: center;
   align-items: center;
-  margin-bottom: 40px;
+    margin-bottom: -5px;
+
 }
 .navbar-nav {
   width: 100%;
@@ -118,8 +119,8 @@ p {
 }
 .logo-header img {
   width: 100%;
-  object-fit: cover;
-  height: 160px;
+  object-fit: contain;
+  height: 200px;
 }
 .nav-link:hover {
   color: yellow;
