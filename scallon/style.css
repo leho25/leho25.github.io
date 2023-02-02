@@ -1,0 +1,23 @@
+.container {
+  background-color: red;
+}
+.text {
+  text-transform: uppercase;
+  
+}
+.navbar-nav .nav-link.active{
+    color: #efdcb3 !important;
+    border-bottom: 1px solid #efdcb3;
+}
+.nav-item{
+    margin: 0 20px;
+}
+.nav-link{
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+   padding-bottom: 30px !important;
+}
+.nav-item:hover .nav-link{
+    color: #efdcb3;
+    border-bottom: 1px solid #efdcb3;
+}
