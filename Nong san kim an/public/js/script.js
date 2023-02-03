@@ -5,7 +5,6 @@ $('.main-slider').slick({
     autoplaySpeed: 2000,
     prevArrow: "<span class='arrow prev'><i class='fas fa-angle-left'></i></span>",
     nextArrow: "<span class='arrow next'><i class='fas fa-angle-right'></i></span>",
-  });
   $('.main-slider-product').slick({
     infinite: true,
     slidesToShow: 3,
